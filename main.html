@@ -10,63 +10,78 @@
 
 <body bgcolor="#F9F4FE">
     <header>
-        <section></section>
         <h1>Diego Valenzuela Parra</h1>
         <h2>Software Developer</h2>
-        <h3>Contáctame: <i>diegovp040603@gmail.com | 644-163-3550</i></h3>
+        <h3>Contáctame: <i><a href="mailto:diegovp040603@gmail.com">diegovp040603@gmail.com</a> | 644-163-3550</i></h3>
         <img src="imgs/diego.jpg" alt="Foto representativa de mí." width="300">
 
-        <section>
+        <nav>
             <h2>Contenido</h2>
             <ul>
                 <li><a href="#generales">Conocimientos generales</a></li>
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#educacion">Educacion</a></li>
+                <li><a href="#redes">Redes sociales</a></li>
             </ul>
-        </section>
+        </nav>
     </header>
 
     <main>
         <section id="generales">
             <h2>Conocimientos generales</h2>
-            <h3>Idiomas</h3>
-            <ul>
-                <li>Español - 100%</li>
-                <li>Inglés - 100%</li>
-                <li>Japonés - 10%</li>
-                <li>Ruso - 5%</li>
-            </ul>
-
-            <h3>Habilidades blandas</h3>
-            <ul>
-                <li>Resolución de problemas</li>
-                <li>Facilidad de comunicación</li>
-                <li>Trabajo en equipo</li>
-                <li>Buena gestión del tiempo</li>
-                <li>Adaptable</li>
-            </ul>
-
-            <h3>Habilidades técnicas</h3>
-            <ul>
-                <li>Lenguajes de programación:
-                    <ol>
-                        <li>Java <img src="imgs/java.png" alt="Logo de Java." width="20"></li>
-                        <li>Python <img src="imgs/python.png" alt="Logo de Python." width="20"></li>
-                        <li>GLSL <img src="imgs/glsl.png" alt="Logo de Shadertoy, donde codificaba GLSL." width="20">
+            <!--
+            Aquí usé un div porque no es una sección aparte como tal.
+            -->
+            <div style="display: flex;">
+                <!--
+                Aquí usé section porque es la sección de idiomas. Misma lógica para las habilidades blandas y técnicas.
+                -->
+                <section style="border-style: solid; background-color: #CEFBEA;">
+                    <h3 style="background-color: #BE7EFF; line-height: 40px; margin: 0px; text-align: center; border-bottom: solid;">Idiomas</h3>
+                    <ul style="margin-right: 20px;">
+                        <li>Español - 100%</li>
+                        <li>Inglés - 100%</li>
+                        <li>Japonés - 10%</li>
+                        <li>Ruso - 5%</li>
+                    </ul>
+                </section>
+    
+                <section style="border-style: solid; border-right-style: none; border-left-style: none; background-color: #CEFBEA;">
+                    <h3 style="background-color: #BE7EFF; line-height: 40px; margin: 0px; text-align: center; border-bottom: solid;">Habilidades blandas</h3>
+                    <ul style="margin-right: 20px;">
+                        <li>Resolución de problemas</li>
+                        <li>Facilidad de comunicación</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Buena gestión del tiempo</li>
+                        <li>Adaptable</li>
+                    </ul>
+                </section>
+    
+                <section style="border-style: solid; background-color: #CEFBEA;">
+                    <h3 style="background-color: #BE7EFF; line-height: 40px; margin: 0px; text-align: center; border-bottom: solid;">Habilidades técnicas</h3>
+                    <ul style="margin-right: 20px;">
+                        <li>Lenguajes de programación:
+                            <ol>
+                                <li>Java <img src="imgs/java.png" alt="Logo de Java." width="20"></li>
+                                <li>Python <img src="imgs/python.png" alt="Logo de Python." width="20"></li>
+                                <li>GLSL <img src="imgs/glsl.png" alt="Logo de Shadertoy, donde codificaba GLSL." width="20">
+                                </li>
+                            </ol>
                         </li>
-                    </ol>
-                </li>
-                <li>Manejo de BD:
-                    <ol>
-                        <li>MySQL <img src="imgs/mysql.png" alt="Logo de Java." width="20"></li>
-                        <li>Mongo <img src="imgs/mongo.png" alt="Logo de Java." height="20"></li>
-                    </ol>
-                </li>
-                <li>Programación web</li>
-                <li>Shaders</li>
-                <li>Conocimiento de Photoshop y After Effects</li>
-            </ul>
+                        <li>Bases de datos:
+                            <ol>
+                                <li>MySQL <img src="imgs/mysql.png" alt="Logo de Java." width="20"></li>
+                                <li>Mongo <img src="imgs/mongo.png" alt="Logo de Java." height="20"></li>
+                            </ol>
+                        </li>
+                        <li>Programación web</li>
+                        <li>Shaders</li>
+                        <li>Photoshop y After Effects</li>
+                    </ul>
+                </section>
+            </div>
         </section>
 
         <section id="about">
@@ -91,7 +106,10 @@
                 <li><b>Casa Ley</b> <i>(Junio - Julio 2022)</i></li>
                 <li><b>Tortillería Allende</b> <i>(2021)</i></li>
             </ul>
-            <h3>Proyectos</h3>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
             <ul>
                 <li><a href="https://jojodiewo.netlify.app/" target="_blank">Mi única página sobreviviente</a></li>
                 <li><a href="https://github.com/bortcrab" target="_blank">Github con proyectos escolares</a></li>
@@ -108,8 +126,20 @@
                 <li><b>CBTis 37</b> - <u>Especialidad en Programación</u> <i>(2019 - 2022)</i></li>
             </ul>
         </section>
-    </main>
 
+        <section id="redes">
+            <h2>Redes sociales</h2>
+            <div style="display: flex;">
+                <a href="https://www.instagram.com/bort_crab/" target="_blank" style="margin: 0px 10px 0px 10px;"><img src="imgs/instagram.png" alt="Logo de Instagram." width="40"></a>
+                <a href="https://x.com/Bort_Crab" target="_blank" style="margin: 0px 10px 0px 10px;"><img src="imgs/x.png" alt="Logo de X (Twitter)." width="40"></a>
+                <a href="https://www.facebook.com/bortcrab" target="_blank" style="margin: 0px 10px 0px 10px;"><img src="imgs/facebook.png" alt="Logo de Facebook." width="40"></a>
+                <a href="https://www.youtube.com/@bortcrab" target="_blank" style="margin: 0px 10px 0px 10px;"><img src="imgs/youtube.png" alt="Logo de YouTube." width="40"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Diego Valenzuela 2024. Derechos reservados.
+    </footer>
 </body>
 
 </html>
